@@ -1,3 +1,5 @@
-import { readFileSync } from "node:fs" 
+const { readFileSync } = require("node:fs") 
 
-export const fileToString = path => readFileSync(path).toString().trim();
+const fileToString = path => readFileSync(path).toString().trim();
+
+exports.fileToString = fileToString;

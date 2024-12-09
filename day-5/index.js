@@ -1,6 +1,7 @@
-import { fileToString } from "../util/readFile.js";
+const { fileToString } = require("../util/readFile.js");
+const path = require("path");
 
-const data = fileToString("./input.txt");
+const data = fileToString(path.join(__dirname, "./input.txt"));
 
 const split = data.split("\n");
 const breakline = split.indexOf("");
